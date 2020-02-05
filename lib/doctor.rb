@@ -23,6 +23,12 @@ class Doctor
     Appointment.new(date, patient, self)
   end
   
+  def patients
+    Appointment.all.map do |a|
+      a.doctor
+      a.patient
+    end
+  end
   
   
 end
