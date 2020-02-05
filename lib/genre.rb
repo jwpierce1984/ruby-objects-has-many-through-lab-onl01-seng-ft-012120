@@ -15,4 +15,14 @@ class Genre
   def save
     @@all << self
   end
+  
+  def songs
+    Song.all.select {song song.genre == self}
+  end
+  
+  def artists
+    Song.all.map do |song|
+      song.artist
+    end
+    
 end
