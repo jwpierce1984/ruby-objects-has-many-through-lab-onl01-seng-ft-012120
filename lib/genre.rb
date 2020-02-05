@@ -24,5 +24,6 @@ class Genre
     Song.all.map do |song|
       song.artist
     end
+  end
     
 end
