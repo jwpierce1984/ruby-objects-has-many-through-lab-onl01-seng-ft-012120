@@ -30,7 +30,6 @@ class Artist
       song.artist
       song.genre
     end
-    
   end
   
 end
