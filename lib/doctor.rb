@@ -23,9 +23,9 @@ class Doctor
     Appointment.new(date, patient, self)
   end
   
-  def patients
-    appointments.map (&:patient)
-  end
+#  def patients
+#    appointments.map (&:patient)
+# end
   
   
 end
